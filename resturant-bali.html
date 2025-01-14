@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- sweetalert2 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Resto</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Resturant <span>Food</span></a>
+        <div class="navbar-list-group">
+            <a href="#home" class="navbar-list">Home</a>
+            <a href="#about" class="navbar-list">Tentang Kami</a>
+            <a href="#menu" class="navbar-list">Menu</a>
+            <a href="#view" class="navbar-list">View</a>
+            <a href="#contact" class="navbar-list">Kontak</a>
+            <a href="index.html" class="navbar-list">Kembali ke Daftar Resturant</a>
+        </div>
+        <div class="navbar-icon">
+            <i data-feather="search" class="icon btn-modal" id="search" data-modal="searchModal"></i>
+            <i data-feather="shopping-cart" class="icon btn-modal" id="shopping-cart" data-modal="tableModal"></i>
+            <i data-feather="menu" class="icon" id="hamburger"></i>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- section hero start -->
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Selama Datang Di resturant-bali</h1>
+            <p>Selamat Menikmati Menu Yang Sudah Kami Sajikan.</p>
+            <a href="#menu" class="button">Beli Sekarang</a>
+        </div>
+    </section>
+    <!-- section hero end -->
+
+    <!-- section about start -->
+    <section class="about" id="about">
+        <h2>Tentang <span>Kami</span></h2>
+        <div class="row">
+            <div class="image-wrapper">
+                <img src="images/bali.jpg" width="100" alt="tentang kami" class="image">
+            </div>
+            <div class="content">
+                <h3>Kenapa Memilih Kami</h3>
+                <p>Di resturant-bali ini kami menyediakan tempat di mana cita rasa bertemu dengan kehangatan suasana.</p>
+                <p>Kami tidak hanya menyajikan makanan, tetapi juga pengalaman yang berkesan. Kami menyediakan menu makanan dengan bahan yang berkualitas tinggi dan kami juga menyediakan pelayanan yang terbaik untuk anda.</p>
+            </div>
+        </div>
+    </section>
+    <!-- section about end -->
+
+    <!-- section menu start -->
+    <section class="menu" id="menu">
+        <div class="header">
+            <h2>Menu <span>Kami</span></h2>
+        </div>
+        <div class="card-container"></div>
+    </section>
+    <!-- section menu end -->
+
+    <!-- View Section star -->
+    <section class="view" id="view">
+        <h2><span>View</span> Kami</h2>
+        <div class="view-image">
+            <img src="images/view/bali1.jpg" alt="view 1">
+        </div>
+        <div class="view-image">
+            <img src="images/view/bali2.jpg" alt="view 2">
+        </div>
+        <div class="view-image">
+            <img src="images/view/bali3.jpg" alt="view 1">
+        </div>
+    </section>
+    <!--view Section end -->
+
+    <!-- Contact Section start -->
+    <section class="contact" id="contact">
+        <h2><span>Kontak</span> Kami</h2>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2463808452203!2d115.21288857359693!3d-8.668103188222348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240965e446645%3A0x868fcdc0371a2886!2sJl.%20Diponegoro%2C%20Kec.%20Denpasar%20Bar.%2C%20Kota%20Denpasar%2C%20Bali!5e0!3m2!1sid!2sid!4v1736781766951!5m2!1sid!2sid"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="nama">
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="text" placeholder="email">
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="no hp">
+                </div>
+                <button type="submit" class="btn">kirim pesan</button>
+            </form>
+
+        </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="wrapper">
+            <a href="https://instagram.com/indahsdda" target="_blank"><i data-feather="instagram"></i></a>
+            <a href="https://facebook.com/indah" target="_blank"><i data-feather="facebook"></i></a>
+        </div>
+        <div class="wrapper">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <span>created by <a>INDAH & KOMANG</a> | © 2025</span>
+    </footer>
+    <!-- footer end -->
+
+    <!-- search input modal start -->
+    <div class="modal" data-id="searchModal">
+        <div class="modal-header">
+            <h3>Search Modal</h3>
+            <i data-feather="x-circle" class="btn-modal-close"></i>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <input type="text" class="input search-input" placeholder="ketikkan nama menu ...">
+            </div>
+            <!-- menu container start -->
+            <div class="product-container"></div>
+            <!-- menu container end -->
+        </div>
+    </div>
+    <!-- search input modal end -->
+
+    <!-- shopping cart modal start -->
+    <div class="modal" data-id="tableModal">
+        <div class="modal-header">
+            <h3>Shopping Cart Modal</h3>
+            <i data-feather="x-circle" class="btn-modal-close"></i>
+        </div>
+        <div class="modal-body">
+            <!-- list start -->
+            <div class="box-container"></div>
+            <!-- list end -->
+            <div class="wrapper">
+                <h4>Total Biaya : </h4>
+                <span class="price">0</span>
+            </div>
+            <button class="button button-checkout">Checkout</button>
+        </div>
+    </div>
+    <!-- shopping cart modal end -->
+
+    <!-- feather icon -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/icon.js"></script>
+
+    <!-- sweetalert2 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.js"></script>
+
+    <!-- my javascript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+</html>
